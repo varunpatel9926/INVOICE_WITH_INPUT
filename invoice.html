@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tractor Invoice</title>
+<link rel="stylesheet" href="invoice.css">
+</head>
+<body>
+
+<div class="invoice-container">
+
+    <!-- HEADER -->
+    <div class="header">
+
+        <div class="dealer-section">
+            <h1>MAA JAGDAMBA TRACTORS</h1>
+
+            <h2>SALES, SPARE & SERVICE</h2>
+
+            <p class="address">
+                SILARI, TEH. PIPARIYA - 461775, DIST. HOSHANGABAD, M.P., INDIA
+            </p>
+
+            <br>
+
+            <p>Email : anilpatel9425@gmail.com</p>
+            <p>GSTIN : 23AUVPP5159N2ZO</p>
+        </div>
+
+        <div class="brand-section">
+
+            <div class="kubota-logo">
+                <span class="logo-icon" id="escorts-logo"><img src="ESCORTS.png" alt=""></span>
+                <div>
+                    <h3>Kubota</h3>
+                    <h4>Escorts Kubota Limited</h4>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="invoice-info">
+
+
+
+
+
+
+
+
+
+
+                <div class="row">
+                    <div>
+<!-- ---------------------------------------------------------------------------INVOICE NO. CHANGEBLE AT THE LAST  -->
+                        <span>Invoice No. : </span>
+                        <span id="invoiceNo" style="font-weight: bold;" ></span>
+
+                    </div>
+
+                    <div>
+
+                        <span  >Date : </span>
+                        <span id="invoiceDate"></span>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="row">
+
+                    <div>
+<!-- -----------------------------------------------------------------------------DELI. CHALLAN NO.--------------- -->
+                        <span>Deli.Challan No. :</span>
+                        <span style="font-weight: bold;" id="deliChallan" ></span>  <!--<<<<<<<<<<<<<<<<<<<<<<<<-->
+
+                    </div>
+
+                    <div>
+
+                        <span>Date : </span>
+                        <span id="deliChallanDate"></span>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- TITLE -->
+    <h1 class="invoice-title">INVOICE</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- --------------------------------------------------------------------CUSTOMER DETAILS------------------------------------ -->
+
+
+
+    <!-- CUSTOMER + TRACTOR -->
+    <div class="details-section">
+
+        <div class="customer">
+
+            <h3>Name and Address of Customer :</h3>
+
+            <div class="field">
+                <label id="name" ></label>
+                <!-- <span></span> -->
+            </div>
+
+            <div class="field">
+                <span style="font-weight:600;">S/o </span><label id="fatherName" ></label>
+                <!-- <span></span> -->
+            </div>
+
+            <div class="field">
+                <label>Village :</label>
+                <span style="font-size: 14px;" id="village" ></span>
+            </div>
+
+            <div class="field">
+                <label>Taluka :</label>
+                <span style="font-size: 14px;" id="taluka" ></span>
+            </div>
+
+            <div class="field">
+                <label>District :</label>
+                <span style="font-size: 14px;" id="district" ></span>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- --------------------------------------------------------------------TRACTOR DETAILS------------------------------------ -->
+
+
+        <div class="tractor">
+
+            <h3>Tractor Details :</h3>
+
+            <div class="field">
+                <label>Chassis Number :</label>
+                <span style="font-size: 14px;" id="chassisNumber" ></span>
+            </div>
+
+            <div class="field">
+                <label>Engine Number :</label>
+                <span style="font-size: 14px;" id="engineNumber" ></span>
+            </div>
+
+            <div class="field">
+                <label>Model :</label>
+                <span style="font-size: 14px;" id="model1" ></span>
+            </div>
+
+            <div class="field">
+                <label>HYP :</label>
+                <span style="font-size: 14px;" id="hyp" ></span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <table class="invoice-table">
+
+
+
+
+
+
+
+
+
+        <thead>
+            <tr>
+                <th width="8%">S.No</th>
+                <th width="37%">Description</th>
+                <th width="8%">Qty.</th>
+                <th width="25%">Rate (₹)</th>
+                <th width="23%">Amount (₹)</th>
+            </tr>
+        </thead>
+
+
+
+
+
+
+
+
+
+
+
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Main Content Row -->
+            <tr class="content-row">
+
+
+
+
+
+
+
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;1.</td>
+
+                <td class="description">
+
+
+
+<!-- -----------------------------------------------------------------------TRACTOR  INFO ---------------------------------------- -->
+
+                    <h5>
+                        ESCORTS :
+                        <span style="font-size: 14px; font-weight: 100;" id="escorts" ></span>
+                    </h5>
+
+
+
+
+
+                    <h5>
+                        Model :
+                       <span style="font-size: 14px; font-weight: 100;" id="model2" ></span>
+                    </h5>
+                    <br>
+
+
+
+
+
+
+
+
+
+                    <div style="margin-top: 80px;" >
+
+                        <p>Std accessories</p>
+                        <p>(Hood, Hook, Drawbar, Front weight)</p>
+                        <p>General Tool kit, Toplinka</p>
+                        <p>Supplied with Tractor as standard fitment.</p>
+
+                    </div>
+                    
+
+
+
+
+
+
+
+
+
+
+                </td>
+
+
+
+                <!-- ----------------------------Quantity      Rate       Amount  ---------------------------------- -->
+
+                <td style="text-align: center;" ><p id="quantity" ></p></td>
+
+
+
+                <td style="text-align: center;" ><p id="rate" ></p></td>
+
+
+                 
+                <td style="text-align: center;" ><p id="amount" ></p></td> <!----AUTO CALCULATE--------->
+
+
+
+
+
+
+
+
+
+            </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Totals Section -->
+
+            <tr>
+
+                <td></td>
+
+                <td colspan="2" style="height:120px;" class="description" >
+
+                    <div class="bank-details">
+
+
+
+
+
+
+                        <h5>Bank Details :</h5>
+
+                        <p>BANK NAME : HDFC BANK</p>
+                        <p>Branch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: MAIN BRANCH PIPARIYA</p>
+                        <p>A/C No &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 50200062087093</p>
+                        <p>IFSC Code &nbsp;&nbsp;&nbsp;                                       : HDFC000772</p>
+
+
+
+
+
+
+
+
+                    </div>
+
+                </td>
+
+                <td class="total-label-left" >
+
+                    <div>Total Amount before Tax</div>
+                    <div>Add : CGST @ 2.5%</div>
+                    <div>Add : SGST @ 2.5%</div>
+                    <div>Total Amount</div>
+
+                </td>
+
+                <td class="total-label-right amount-column">
+
+                    <div id="beforeTax"></div>
+                    <div id="cgstAmount"></div>
+                    <div id="sgstAmount"></div>
+                    <div id="totalAmount"></div>
+
+                </td>
+
+            </tr>
+
+
+        </tbody>
+
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- TERMS -->
+    <div class="terms">
+
+        <h4>Terms:</h4>
+
+        <p>
+            Our responsibility ceases absolutely as the goods are handed
+            over to the carrier.
+        </p>
+
+        <p>
+            We are not responsible for any transit loss or damage under
+            any case.
+        </p>
+
+        <p>
+            All disputes subject to Pipariya Jurisdiction.
+        </p>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- RECEIVED -->
+    <div class="received">
+
+        <p>
+            RECEIVED BY : <span style="font-size: 14px; font-weight: bold;" id="receivedBy" ></span>
+        </p>
+
+        <p>
+            Date : <span style="font-size: 14px; font-weight: bold;" id="receivedDate" ></span>
+        </p>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+
+        <span>For - </span>
+
+        <span class="dealer-name">
+            MAA JAGDAMBA TRACTORS
+        </span>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+
+    const params = new URLSearchParams(window.location.search);
+
+    const invoiceNo = params.get("invoiceNo");
+    const invoiceDate = params.get("invoiceDate");
+    const deliChallan = params.get("deliChallan");
+    const deliChallanDate = params.get("deliChallanDate");
+    const name = params.get("name");
+    const fatherName = params.get("fatherName");
+    const village = params.get("village");
+    const taluka = params.get("taluka");
+    const district = params.get("district");
+    const chassisNumber = params.get("chassisNumber");
+    const engineNumber = params.get("engineNumber");
+    const model1 = params.get("model1");
+    const hyp = params.get("hyp");
+    const escorts = params.get("escorts");
+    const model2 = params.get("model2");
+    const quantity = params.get("quantity");
+    const rate = params.get("rate");
+    const receivedBy = params.get("receivedBy");
+    const receivedDate = params.get("receivedDate");
+
+
+
+    document.getElementById("invoiceNo").innerText = invoiceNo;
+    document.getElementById("invoiceDate").innerText = invoiceDate;
+    document.getElementById("deliChallan").innerText = deliChallan;
+    document.getElementById("deliChallanDate").innerText = deliChallanDate;
+    document.getElementById("name").innerText = name;
+    document.getElementById("fatherName").innerText = fatherName;
+    document.getElementById("village").innerText = village;
+    document.getElementById("taluka").innerText = taluka;
+    document.getElementById("district").innerText = district;
+    document.getElementById("chassisNumber").innerText = chassisNumber;
+    document.getElementById("engineNumber").innerText = engineNumber;
+    document.getElementById("model1").innerText = model1;
+    document.getElementById("hyp").innerText = hyp;
+    document.getElementById("escorts").innerText = escorts;
+    document.getElementById("model2").innerText = model2;
+    document.getElementById("quantity").innerText = quantity;
+    document.getElementById("rate").innerText = rate;
+    document.getElementById("receivedBy").innerText = receivedBy;
+    document.getElementById("receivedDate").innerText = receivedDate;
+
+
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+        // function formatDate(date) {
+        //     const day = String(date.getDate()).padStart(2, '0');
+        //     const month = String(date.getMonth() + 1).padStart(2, '0');
+        //     const year = date.getFullYear();
+
+        //     return `${day}/${month}/${year}`;
+        // }
+
+        // // Today's date
+        // const invoiceDate = new Date();
+
+        // // Due date = 30 days later
+        // const dueDate = new Date();
+        // dueDate.setDate(dueDate.getDate() + 30);
+
+        // Insert into HTML
+        // document.getElementById('invoiceDate').textContent =
+        //     formatDate(invoiceDate);
+
+
+        //document.getElementById('challanDate').textContent =
+         //   formatDate(invoiceDate);
+        // document.getElementById('dueDate').textContent =
+        //     formatDate(dueDate);
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Example invoice number: INV-20260605-4821
+      //  const random = Math.floor(1000 + Math.random() * 9000);
+
+      //  const invoiceNo =
+        //    "MJT/" +
+        //    invoiceDate.getFullYear() +"/"+
+        //    String(invoiceDate.getMonth() + 1).padStart(2, '0') +"/"+
+         //   String(invoiceDate.getDate()).padStart(2, '0') +
+        //    "/"; //+"001";  //<<<<<<<<<<<<<<<<---------------------------------------------------INVOICE NO.----------------------
+
+        //document.getElementById('invoiceNo').textContent = invoiceNo;
+
+
+
+
+    });
+
+
+
+
+
+
+
+
+
+
+        function formatIndianCurrency(num) {
+            return Number(num).toLocaleString('en-IN', {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+            });
+        }
+
+        function calculateInvoice() {
+
+            const qty = parseFloat(
+                document.getElementById("quantity").innerText.replace(/,/g,'')
+            ) || 0;
+
+            const rate = parseFloat(
+                document.getElementById("rate").innerText.replace(/,/g,'')
+            ) || 0;
+
+            const cgstPercent = 2.5; // Change as needed
+            const sgstPercent = 2.5; // Change as needed
+
+            const amount = qty * rate;
+
+            const cgstAmount = amount * cgstPercent / 100;
+
+            const sgstAmount = amount * sgstPercent / 100;
+
+            const totalAmount =
+                amount + cgstAmount + sgstAmount;
+
+            document.getElementById("amount").innerText =
+                formatIndianCurrency(amount);
+
+            document.getElementById("beforeTax").innerText =
+                `₹ ${formatIndianCurrency(amount)}`;
+
+            document.getElementById("cgstAmount").innerText =
+                `₹ ${formatIndianCurrency(cgstAmount)}`;
+
+            document.getElementById("sgstAmount").innerText =
+                `₹ ${formatIndianCurrency(sgstAmount)}`;
+
+            document.getElementById("totalAmount").innerText =
+                `₹ ${formatIndianCurrency(totalAmount)}`;
+        }
+
+        calculateInvoice();
+
+
+
+
+</script>
+
+
+</body>
+</html>

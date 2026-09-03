@@ -1,0 +1,251 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#fff;
+    color:#222;
+}
+
+.invoice-container{
+    width:210mm;
+    min-height:297mm;
+    margin:auto;
+    padding:20px 25px;
+}
+
+/* HEADER */
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+#escorts-logo img{
+    height:40px;
+    width:50px;
+}
+
+.dealer-section h1{
+    color:#b33a3a;
+    font-size:18px;
+    font-weight:800;
+    margin-bottom:8px;
+}
+
+.dealer-section h2{
+    font-size:16px;
+    margin-bottom:10px;
+}
+
+.address{
+    font-size:13px;
+    margin-bottom:10px;
+}
+
+.dealer-section p{
+    font-size:12px;
+    margin-bottom:6px;
+}
+
+.brand-section{
+    width:46%;
+}
+
+.kubota-logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    justify-content:center;
+}
+
+.logo-icon{
+    font-size:42px;
+    color:#b33a3a;
+    font-weight:bold;
+}
+
+.kubota-logo h3{
+    font-size:28px;
+    color:#1b8aa6;
+    line-height:1;
+}
+
+.kubota-logo h4{
+    font-size:10px;
+}
+
+.invoice-info{
+    border:2px solid #777;
+    border-radius:12px;
+    padding:10px;
+    margin-top:5px;
+    margin-left: 10px;
+}
+
+.invoice-info .row{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin:10px 0;
+    gap:6px;
+    font-size:12px;
+}
+
+.line{
+    border-bottom:1px solid #000;
+    flex:1;
+}
+
+.small{
+    flex:0.8;
+}
+
+/* TITLE */
+
+.invoice-title{
+    text-align:center;
+    font-size:20px;
+    margin:20px 0;
+    font-weight:700;
+}
+
+/* DETAILS */
+
+.details-section{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:8px;
+}
+
+.customer,
+.tractor{
+    width:47%;
+}
+
+.details-section h3{
+    margin-bottom:10px;
+
+}
+
+.field{
+    /* display:flex; */
+    align-items:center;
+    margin-bottom:8px;
+}
+
+.field label{
+    width:110px;
+    font-weight:600;
+    font-size: 13px;
+}
+
+/* .field span{
+    flex:1;
+    border-bottom:1px solid #000;
+    height:20px;
+} */
+
+/* TABLE */
+
+.invoice-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+}
+
+.invoice-table th,
+.invoice-table td{
+    border:1px solid #666;
+    padding:8px;
+    vertical-align:top;
+}
+
+.invoice-table th{
+    text-align:center;
+    font-size:14px;
+}
+
+.content-row{
+    height:250px;
+}
+
+.description h5{
+    margin-bottom:10px;
+}
+
+.description p{
+    margin-bottom:10px;
+    font-size:12px;
+}
+
+.bank-details{
+    margin-top:5px;
+}
+
+.bank-details p{
+    margin-bottom:10px;
+}
+
+/* TERMS */
+
+.terms{
+    margin-top:15px;
+    font-size:12px;
+}
+
+.terms h4{
+    margin-bottom:8px;
+}
+
+.terms p{
+    margin-bottom:5px;
+}
+
+/* RECEIVED */
+
+.received{
+    margin-top:20px;
+    font-size:14px;
+}
+
+.received p{
+    margin-bottom:15px;
+}
+
+/* FOOTER */
+
+.footer{
+    margin-top:90px;
+    text-align:right;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.dealer-name{
+    color:#b33a3a;
+}
+
+
+.total-label-left div {
+    text-align:right;
+    vertical-align:middle;
+    font-weight:600;
+    padding-left:15px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+
+.total-label-right div {
+    text-align:left;
+    vertical-align:middle;
+    font-weight:600;
+    /* padding-left:8px; */
+    font-size: 12px;
+    margin-bottom: 15px;
+}

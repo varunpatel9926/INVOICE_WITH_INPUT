@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f4f4f4;
+        }
+
+        .container {
+            width: 700px;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #4a90e2;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            background: #4a90e2;
+            color: white;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background: #357abd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>User Details</h2>
+
+            
+            <div class="input-group">
+                <label>Invoice No.</label>
+                <input type="text" name="invoiceNo" id="invoiceNo" required>
+            </div>
+
+            <div class="input-group">
+                <label>Invoice Date</label>
+                <input type="date" name="invoiceDate" id="invoiceDate" required>
+            </div>
+
+            <div class="input-group">
+                <label>Deli. Challan Number</label>
+                <input type="text" name="deliChallan" id="deliChallan" required>
+            </div>
+
+            <div class="input-group">
+                <label>Deli. Challan Date</label>
+                <input type="date" name="deliChallanDate" id="deliChallanDate" required>
+            </div>
+
+            <div class="input-group">
+                <label>Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+
+            <div class="input-group">
+                <label>Father's Name</label>
+                <input type="text" name="fatherName" id="fatherName" required>
+            </div>
+
+            <div class="input-group">
+                <label>Village</label>
+                <input type="text" name="village" id="village" required>
+            </div>
+
+            <div class="input-group">
+                <label>Taluka</label>
+                <input type="text" name="taluka" id="taluka" required>
+            </div>
+
+            <div class="input-group">
+                <label>District</label>
+                <input type="text" name="district" id="district" required>
+            </div>
+
+            <div class="input-group">
+                <label>Chassis Number</label>
+                <input type="text" name="chassisNumber" id="chassisNumber" required>
+            </div>
+
+            <div class="input-group">
+                <label>Engine Number</label>
+                <input type="text" name="engineNumber" id="engineNumber" required>
+            </div>
+
+            <div class="input-group">
+                <label>Model</label>
+                <input type="text" name="model1" id="model1" required>
+            </div>
+
+            <div class="input-group">
+                <label>HYP</label>
+                <input type="text" name="hyp" id="hyp" required>
+            </div>
+
+
+            <div class="input-group">
+                <label>ESCORTS</label>
+                <input type="text" name="escorts" id="escorts" required>
+            </div>
+
+            <div class="input-group">
+                <label>Model</label>
+                <input type="text" name="model2" id="model2" required>
+            </div>
+
+            <div class="input-group">
+                <label>Quantity</label>
+                <input type="number" name="quantity" id="quantity" required>
+            </div>
+
+            <div class="input-group">
+                <label>Rate</label>
+                <input type="number" name="rate" id="rate" required>
+            </div>
+
+            <div class="input-group">
+                <label>Received By</label>
+                <input type="text" name="receivedBy" id="receivedBy" required>
+            </div>
+
+            <div class="input-group">
+                <label>Received Date</label>
+                <input type="date" name="receivedDate" id="receivedDate" required>
+            </div>
+
+
+            <button type="submit" onclick="submitData()" >Submit</button>
+
+    </div>
+
+
+    <script>
+
+
+        function submitData() {
+
+
+            const invoiceNo = document.getElementById("invoiceNo").value;
+            const invoiceDate = document.getElementById("invoiceDate").value;
+            const deliChallan = document.getElementById("deliChallan").value;
+            const deliChallanDate = document.getElementById("deliChallanDate").value;
+            const name = document.getElementById("name").value;
+            const fatherName = document.getElementById("fatherName").value;
+            const village = document.getElementById("village").value;
+            const taluka = document.getElementById("taluka").value;
+            const district = document.getElementById("district").value;
+            const chassisNumber = document.getElementById("chassisNumber").value;
+            const engineNumber = document.getElementById("engineNumber").value;
+            const model1 = document.getElementById("model1").value;
+            const hyp = document.getElementById("hyp").value;
+            const escorts = document.getElementById("escorts").value;
+            const model2 = document.getElementById("model2").value;
+            const quantity = document.getElementById("quantity").value;
+            const rate = document.getElementById("rate").value;
+            const receivedBy = document.getElementById("receivedBy").value;
+            const receivedDate = document.getElementById("receivedDate").value;
+
+
+            const [year1, month1, day1] = invoiceDate.split("-");
+            const formattedinvoiceDate = `${day1}/${month1}/${year1}`;
+
+            const [year2, month2, day2] = deliChallanDate.split("-");
+            const formatteddeliChallanDate = `${day2}/${month2}/${year2}`;
+
+            const [year3, month3, day3] = receivedDate.split("-");
+            const formattedreceivedDate = `${day3}/${month3}/${year3}`;
+
+            
+
+            window.location.href =
+                `invoice.html?invoiceNo=${encodeURIComponent(invoiceNo)}&invoiceDate=${encodeURIComponent(formattedinvoiceDate)}&deliChallan=${encodeURIComponent(deliChallan)}&deliChallanDate=${encodeURIComponent(formatteddeliChallanDate)}&name=${encodeURIComponent(name)}&fatherName=${encodeURIComponent(fatherName)}&village=${encodeURIComponent(village)}&taluka=${encodeURIComponent(taluka)}&district=${encodeURIComponent(district)}&chassisNumber=${encodeURIComponent(chassisNumber)}&engineNumber=${encodeURIComponent(engineNumber)}&model1=${encodeURIComponent(model1)}&hyp=${encodeURIComponent(hyp)}&escorts=${encodeURIComponent(escorts)}&model2=${encodeURIComponent(model2)}&quantity=${encodeURIComponent(quantity)}&rate=${encodeURIComponent(rate)}&receivedBy=${encodeURIComponent(receivedBy)}&receivedDate=${encodeURIComponent(formattedreceivedDate)}`;
+        
+        }
+
+    </script>
+
+
+</body>
+</html>
